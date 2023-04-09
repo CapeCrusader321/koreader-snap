@@ -1,0 +1,41 @@
+name: koreader
+base: core22
+version: '2023.03-Cherry Blossom'
+summary: OpenSource and Powerful Document/E-Book Reader
+description: |
+  Versatile Open Source Document and E-Book Reader supporting several formats.
+grade: stable
+confinement: strict
+compression: lzo
+architectures:
+  - build-on: amd64
+    build-for: amd64
+   
+#slots:
+  #koreader:
+    #interface: dbus
+    #bus: session
+    #name: io.github.CapeCrusader321.koreader
+    
+apps:
+  koreader:
+    command: usr/bin/koreader
+    extensions: [gnome]
+    environment:
+            GTK_USE_PORTAL: '1'
+    plugs:
+      - home
+      - network
+      - optical-drive
+      - raw-usb
+      - removable-media
+      - unity7
+      - screen-inhibit-control
+ 
+
+parts:
+  koreader:
+    source: https://github.com/koreader/koreader/releases/download/v2023.03/koreader-2023.03-amd64.deb 
+    plugin: dump
+    
+    
