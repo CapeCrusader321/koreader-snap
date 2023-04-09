@@ -23,7 +23,7 @@ apps:
     extensions: [gnome]
     environment:
             GTK_USE_PORTAL: '1'
-            LD_LIBRARY_PATH: $SNAP/usr/lib/koreader
+            LD_LIBRARY_PATH: $SNAP/usr/lib/koreader:$SNAP/usr/lib/koreader/jit
     plugs:
       - home
       - network
@@ -42,6 +42,4 @@ parts:
       - fonts-noto-core
       - fonts-noto-ui-core
       - fonts-noto-hinted
-      - luajit
-      - libluajit-5.1-2
-    
+      
