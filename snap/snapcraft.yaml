@@ -23,6 +23,7 @@ apps:
     extensions: [gnome]
     environment:
             GTK_USE_PORTAL: '1'
+            LD_LIBRARY_PATH: $SNAP/usr/lib/koreader
     plugs:
       - home
       - network
