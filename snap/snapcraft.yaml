@@ -38,5 +38,10 @@ parts:
   koreader:
     source: https://github.com/koreader/koreader/releases/download/v2023.03/koreader-2023.03-amd64.deb 
     plugin: dump
-    
+    stage-packages:
+      - fonts-noto-core
+      - fonts-noto-ui-core
+      - fonts-noto-hinted
+      - luajit
+      - libluajit-5.1-2
     
