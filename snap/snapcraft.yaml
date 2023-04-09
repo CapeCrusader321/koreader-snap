@@ -11,7 +11,7 @@ architectures:
   - build-on: amd64
     build-for: amd64
     
-layouts:
+layout:
   /usr/bin/koreader:
      symlink: $SNAP/usr/bin/koreader
      
