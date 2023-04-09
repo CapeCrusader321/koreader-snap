@@ -2,7 +2,7 @@
 Name=KOReader
 Comment=KOReader is a document viewer
 Exec=koreader %u
-Icon=koreader
+Icon=${SNAP}/meta/gui/koreader.png
 Terminal=false
 Type=Application
 Categories=Graphics;
