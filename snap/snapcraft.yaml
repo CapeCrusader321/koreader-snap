@@ -15,8 +15,8 @@ layout:
   /usr/bin/koreader:
      symlink: $SNAP/usr/bin/koreader
      
-plugs:
-  koreader-dbus:
+slots:
+  koreader:
     interface: dbus
     bus: session
     name: io.github.CapeCrusader321.koreader
@@ -30,10 +30,6 @@ apps:
     plugs:
       - home
       - network
-      - optical-drive
-      - raw-usb
-      - koreader-dbus
-      - removable-media
       - unity7
       - screen-inhibit-control
  
