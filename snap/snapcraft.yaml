@@ -38,8 +38,4 @@ parts:
   koreader:
     source: https://github.com/koreader/koreader/releases/download/v$SNAPCRAFT_PROJECT_VERSION/koreader-$SNAPCRAFT_PROJECT_VERSION-amd64.deb 
     plugin: dump
-    stage-packages:
-      - fonts-noto-core
-      - fonts-noto-ui-core
-      - fonts-noto-hinted
-      
+    
