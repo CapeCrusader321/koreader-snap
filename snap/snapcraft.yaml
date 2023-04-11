@@ -1,6 +1,6 @@
 name: koreader
 base: core22
-version: 2023.03
+version: '2023.03'
 summary: OpenSource and Powerful Document/E-Book Reader
 description: |
   Versatile Open Source Document and E-Book Reader supporting several formats.
