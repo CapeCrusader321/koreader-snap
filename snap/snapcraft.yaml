@@ -1,6 +1,6 @@
 name: koreader
 base: core22
-version: '2023.03'
+version: 2023.03
 summary: OpenSource and Powerful Document/E-Book Reader
 description: |
   Versatile Open Source Document and E-Book Reader supporting several formats.
@@ -40,7 +40,7 @@ apps:
 
 parts:
   koreader:
-    source: https://github.com/koreader/koreader/releases/download/v2023.03/koreader-2023.03-amd64.deb 
+    source: https://github.com/koreader/koreader/releases/download/v$SNAPCRAFT_PROJECT_VERSION/koreader-$SNAPCRAFT_PROJECT_VERSION-amd64.deb 
     plugin: dump
     stage-packages:
       - fonts-noto-core
